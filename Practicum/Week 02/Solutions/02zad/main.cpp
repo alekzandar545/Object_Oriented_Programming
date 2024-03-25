@@ -1,10 +1,6 @@
 #include <iostream>
 #include <fstream>
 
-void MoveBack(std::fstream& file){
-
-}
-
 int main(){
     std::fstream file("text.txt", std::ios::binary | std::ios::in | std::ios::out);
     if(!file.is_open()){
@@ -31,5 +27,5 @@ int main(){
         file.write((char*)&fill, sizeof(char));
         putPointer++;
     }
-    
+    file.close();
 }
