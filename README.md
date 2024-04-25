@@ -10,6 +10,7 @@
 ### [:seven: Exceptions, Keyword friend, Keyword mutable, Static fields and methods](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Seminar/Week%2007)
 ### [:eight: Operators, Collections of pointers to objects](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Seminar/Week%2008)
 ### [:nine: Forward declaration, Inheritance](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Seminar/Week%2009)
+### [:one::zero: Virtual functions, Virtual tables, Abstract classes, Polymorphism, Diamond problem](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Seminar/Week%2010)
 
 ## :pushpin: Contents by weeks (Practicum):
 ### [:one: Structs, Padding and size, Unions, Enums](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2001)
@@ -19,8 +20,9 @@
 ### [:five: Life cycle of objects](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2005)
 ### [:six: Copy and Move semantics](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2006)
 ### [:seven: Exceptions, Keyword friend, Static fields and methods](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2007)
-### [:eight: Redefining operators](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2008)
+### [:eight: Operator overloading](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2008)
 ### [:nine: Inheritance](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2009)
+### [:one::zero: Virtual functions, Virtual tables, Abstract classes, Polymorphism, Diamond problem](https://github.com/xKrashx/Object_Oriented_Programming/tree/main/Practicum/Week%2010)
 
 ## :books: Notion materials:
 ### [Theory, materials, examples and quick videos to explain concepts](https://www.notion.so/2263ae863b004076961ead3e357125aa)
