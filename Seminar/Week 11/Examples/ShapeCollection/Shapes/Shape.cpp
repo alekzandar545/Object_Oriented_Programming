@@ -1,4 +1,4 @@
-#include "Shape.h"
+#include "Shape.hpp"
 #include <stdexcept>
 #include <utility>
 #include <cmath>
@@ -11,7 +11,7 @@ Shape::Shape(Shape const &other){
 	Copy(other);
 }
 
-Shape::Shape(Shape &&other){
+Shape::Shape(Shape &&other) noexcept{
 	Move(std::move(other));
 }
 
@@ -26,7 +26,7 @@ Shape &Shape::operator =(Shape const &other){
 
 }
 
-Shape &Shape::operator =(Shape &&other){
+Shape &Shape::operator =(Shape &&other) noexcept{
 
 	if(this == &other) return *this;
 
@@ -37,7 +37,7 @@ Shape &Shape::operator =(Shape &&other){
 
 }
 
-Shape::~Shape(){
+Shape::~Shape() noexcept{
 	Free();
 }
 
@@ -75,13 +75,13 @@ void Shape::Copy(Shape const &other){
 
 }
 
-void Shape::Move(Shape &&other){
+void Shape::Move(Shape &&other) noexcept{
 
 	m_Points = std::exchange(other.m_Points, nullptr);
 	m_NumberOfPoints = other.m_NumberOfPoints;
 
 }
 
-void Shape::Free(){
+void Shape::Free() noexcept{
 	delete[] m_Points;
 }

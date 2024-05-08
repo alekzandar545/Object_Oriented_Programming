@@ -1,7 +1,7 @@
 #ifndef __TRIANGLE_H_
 #define __TRIANGLE_H_
 
-#include "Shape.h"
+#include "Shape.hpp"
 
 class Triangle : public Shape{
 
@@ -10,6 +10,10 @@ public:
 	double GetArea() const override;
 	double GetPer() const override;
 	bool IsPointIn(int x, int y) const override;
+	Shape *Clone() const override;
+
+private:
+	static constexpr double EPSILON = 0.00001;
 
 };
 

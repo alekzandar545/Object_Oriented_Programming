@@ -1,7 +1,7 @@
 #ifndef __RECTANGLE_H_
 #define __RECTANGLE_H_
 
-#include "Shape.h"
+#include "Shape.hpp"
 
 class Rectangle : public Shape{
 
@@ -10,6 +10,7 @@ public:
 	double GetArea() const override;
 	double GetPer() const override;
 	bool IsPointIn(int x, int y) const override;
+	Shape *Clone() const override;
 
 };
 

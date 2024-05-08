@@ -1,7 +1,5 @@
-#include "Triangle.h"
+#include "Triangle.hpp"
 #include <cmath>
-
-double const EPSILON = 0.00001;
 
 Triangle::Triangle(int x1, int y1, int x2, int y2, int x3, int y3): Shape(3){
 
@@ -40,4 +38,8 @@ bool Triangle::IsPointIn(int x, int y) const{
 
 	return abs(t1.GetArea() + t2.GetArea() + t3.GetArea() - GetArea()) <= EPSILON;
 
+}
+
+Shape *Triangle::Clone() const{
+	return new Triangle(*this);
 }

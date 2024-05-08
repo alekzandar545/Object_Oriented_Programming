@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+#include "Rectangle.hpp"
 
 Rectangle::Rectangle(int x1, int y1, int x3, int y3): Shape(4){
 
@@ -32,7 +32,11 @@ double Rectangle::GetPer() const{
 bool Rectangle::IsPointIn(int x, int y) const{
 
 	Shape::Point p(x, y);
-	return p.x >= GetPointAtIndex(0).x && p.y >= GetPointAtIndex(1).x &&
-		p.y <= GetPointAtIndex(0).y && p.y >= GetPointAtIndex(2).y;
+	return GetPointAtIndex(0).x <= p.x && p.x <= GetPointAtIndex(2).x
+		&& GetPointAtIndex(0).y <= p.y && p.y <= GetPointAtIndex(2).y;
 
+}
+
+Shape *Rectangle::Clone() const{
+	return new Rectangle(*this);
 }
