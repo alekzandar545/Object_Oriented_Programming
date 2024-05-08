@@ -1,14 +1,14 @@
 #include <iostream>
 #include <stdexcept>
 
-#include "Point.hpp"
-#include "Triangle.hpp"
-#include "Quadrilateral.hpp"
-#include "Trapezoid.hpp"
-#include "Parallelogram.hpp"
-#include "Rhombus.hpp"
-#include "Rectangle.hpp"
-#include "Square.hpp"
+#include "point.h"
+#include "triangle.h"
+#include "quadrilateral.h"
+#include "trapezoid.h"
+#include "parallelogram.h"
+#include "rhombus.h"
+#include "rectangle.h"
+#include "square.h"
 
 void TestFigures()
 {
